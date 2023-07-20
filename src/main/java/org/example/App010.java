@@ -11,14 +11,15 @@ public class App010 {
              BufferedReader bufferedReader = new BufferedReader(fileReader);) {
             String line = null;
             int lineCounter = 0;
+            // variant-1
 //            while ((line = bufferedReader.readLine()) != null) {
 //                if ((lineCounter++) % 2 == 0) {
 //                    System.out.println(line);
 //                    fileWriter.write(line+System.getProperty("line.separator"));
 //                }
+            //заменяем все буквы е на Е
             char[] buffer = new char[(int)new File("lines.txt").length()];
             bufferedReader.read(buffer);
-            //line.getChars(0, line.length(), buffer, 0);
             for (int i = 0; i < buffer.length; i++) {
                 if (buffer[i] == 'e')
                     fileWriter.write('E');

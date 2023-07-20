@@ -13,7 +13,7 @@ public class App007 {
             inputStream = new FileInputStream("outputApp006.txt");
             objectInputStream = new ObjectInputStream(inputStream);
             App006.Car car = (App006.Car) objectInputStream.readObject();
-            System.out.println("Read Obj -=: " + car + " =- from file");
+            System.out.println("Read Obj: -= " + car + " =- from file");
         } catch (Exception exception) {
             Logger.getLogger(App007.class.getName()).log(Level.SEVERE, null, exception);
 

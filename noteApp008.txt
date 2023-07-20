@@ -1,0 +1,3 @@
+This lines of text should be written in file
+using buffered stream.
+Just one more line.
